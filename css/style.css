@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: font-size: 100%
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should includr border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -web-kit-padding-before: 0px;
+    -web-kit-padding-after: 0px;
+    -web-kit-padding-start: 0px;
+    -web-kit-padding-end: 0px;
+}
+
+
+/*Genral styles
+(the styles used everywhere in the page (like the body) or styles which are used in more then 2 of the modules below (h2,h3,h4,h5,h6,p,a,ul,li))
+*/
+
+html {
+    background: rgba(0, 0, 0, 0) url("../images/background.jpg") no-repeat center center fixed;
+    -wedkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+body {
+    text-align: center;
+    font-family: arial;
+    font-size: 1.5rem;
+}
+
+.text {
+    color: #FF4141;
+    padding-bottom: 1rem;
+}
+
+
+/*Header styles
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.heading {
+    font-size: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    text-shadow: 3px 3px 3px black;
+    color: #ff4242;
+}
+
+.heading.logo {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.heading span {
+    padding-top: 0.5rem;
+}
+
+.start-button {
+    background-color: #9e9e9e;
+    border-color: #9e9e9e;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    text-shadow: none;
+    width: 9.688rem;
+    color: #000000
+}
+
+.start-button:hover {
+    background-color: #707070;
+}
+
+
+/* Content style
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.start-section,
+.quiz-section,
+.result-section {
+    background-image: url("../images/transparent.jpg");
+    border-radius: 0.5rem;
+    padding: 2rem;
+    width: 32rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#choices {
+    color: #ff4141;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 60%;
+}
+
+#choices input.option {
+    margin-right: 1rem;
+}
+
+.question-number {
+    color: #FF4141;
+    padding-top: 1.5rem;
+}
+
+#result-msg h3,
+#result_msg h4 {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: wheat;
+    font-weight: 400;
+}
+
+
+}
+#result_msg h4 {
+    font-size: 0.8rem;
+    padding-top: 3px;
+    padding-bottom: 10px;
+}
+
+/* Footer styles
+(all the styles inside the < footer> tag)
+*/
+
+/*Responsive styles
+(the very last module in css,contains all the media queries and it is dealing with the compatibility with mobliles and tablets)

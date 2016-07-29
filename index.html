@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+    <header class="banner-section">
+        <h1 class="heading">
+            <img class="logo" width="10%" alt= "pikes-peak" src="images/pikes-peak.jpg">
+            <span>The Pikes Peak Quiz</span>
+        </h1>
+    </header>
+
+    <section class="start-section">
+        <h2 class="text">Are You A Mountain Head?</h2>
+        <p class="text">How much do you know about Americas Mountain ?</p>
+        <button class="start-button" id="startQuizButton">Start</button>
+    </section>
+
+    <section class="quiz-section">
+        <div id="question-wrapper">
+            <h1 class="text" id="question">What is the elevation of Pikes Peak?</h1>
+            <div id="choices">
+                <input class="option" type="radio" value="0" name="option">
+                <br>
+                <input class="option" type="radio" value="1" name="option">
+                <br>
+                <input class="option" type="radio" value="2" name="option">
+                <br>
+            </div>
+            <div class="question-number" id="questionNumberDisplay">Question 1 of 10</div>
+        </div>
+    </section>
+
+    <section class="result-section">
+        <h2 class="text"> Final Score </h2>
+        <h3 class="text" id="finalScore">10/10</h3>
+        <div id="result_msg"></div>
+        <button class="start-button" id="tryagain">Try Again</button>
+    </section>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
+</html>
